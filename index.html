@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a20">
+  <meta name="description" content="Pixel Party is a tiny retro arcade with Tetris, Snake, 2048, Pong, and Breakout.">
+  <title>Pixel Party — Tiny Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header shell">
+    <a class="brand" href="index.html" aria-label="Pixel Party home"><span class="brand-mark" aria-hidden="true">◆</span><span>PIXEL<br><b>PARTY</b></span></a>
+    <nav class="site-nav" aria-label="Game navigation"><a href="index.html" aria-current="page">HOME</a><a href="tetris.html">TETRIS</a><a href="snake.html">SNAKE</a><a href="2048.html">2048</a><a href="shop.html">SHOP</a></nav>
+    <div class="header-status" aria-label="Arcade status"><span class="coin-wallet">COINS <b data-coin-count>000</b></span><span class="status-dot"></span><span>ARCADE ONLINE</span></div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Pixel <em>Party</em></h1>
+        <p class="hero-text">Pick a game and play.</p>
+        <a class="primary-button hero-button" href="#cabinets">CHOOSE A GAME <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section id="cabinets" class="cabinet-section" aria-label="Game cabinets">
+      <div class="game-cards">
+        <article class="game-card card-tetris"><div class="card-topline"><span class="card-number">01</span><span class="card-tag">STACK / CLEAR</span></div><div class="card-visual tetris-visual" aria-hidden="true"><span class="tetromino t1"></span><span class="tetromino t2"></span><span class="tetromino t3"></span><span class="tetromino t4"></span></div><h2>TETRIS</h2><p>Drop blocks. Clear lines.<br>Keep the stack low.</p><a class="card-button" href="tetris.html">OPEN GAME <span>→</span></a></article>
+        <article class="game-card card-snake"><div class="card-topline"><span class="card-number">02</span><span class="card-tag">EAT / GROW</span></div><div class="card-visual snake-visual" aria-hidden="true"><span class="snake-head"></span><span class="snake-body s1"></span><span class="snake-body s2"></span><span class="snake-body s3"></span><span class="snake-food">✦</span></div><h2>SNAKE</h2><p>One snack at a time.<br>Don’t hit the wall.</p><a class="card-button" href="snake.html">OPEN GAME <span>→</span></a></article>
+        <article class="game-card card-2048"><div class="card-topline"><span class="card-number">03</span><span class="card-tag">SLIDE / MERGE</span></div><div class="card-visual grid-visual" aria-hidden="true"><span>2</span><span>4</span><span>8</span><span>16</span></div><h2>2048</h2><p>Slide the tiles.<br>Build the big one.</p><a class="card-button" href="2048.html">OPEN GAME <span>→</span></a></article>
+        <article class="game-card card-pong"><div class="card-topline"><span class="card-number">04</span><span class="card-tag">SERVE / RETURN</span></div><div class="card-visual pong-visual" aria-hidden="true"><span class="pong-paddle left"></span><span class="pong-ball"></span><span class="pong-paddle right"></span></div><h2>PONG</h2><p>Read the bounce.<br>Beat the CPU to seven.</p><a class="card-button" href="pong.html">OPEN GAME <span>→</span></a></article>
+        <article class="game-card card-breakout"><div class="card-topline"><span class="card-number">05</span><span class="card-tag">BOUNCE / BREAK</span></div><div class="card-visual breakout-visual" aria-hidden="true"><span class="breakout-bricks"></span><span class="breakout-paddle"></span><span class="breakout-ball"></span></div><h2>BREAKOUT</h2><p>Smash every brick.<br>Keep the ball alive.</p><a class="card-button" href="breakout.html">OPEN GAME <span>→</span></a></article>
+        <article class="game-card card-mines"><div class="card-topline"><span class="card-number">06</span><span class="card-tag">REVEAL / FLAG</span></div><div class="card-visual mines-visual" aria-hidden="true"><span>· 1 ·</span><span>1 2 1</span><span>· ⚑ ·</span></div><h2>MINES</h2><p>Read the clues.<br>Mark every hidden mine.</p><a class="card-button" href="mines.html">OPEN GAME <span>→</span></a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell"><span>PIXEL PARTY // MADE FOR QUICK RESETS</span><a href="#top">↑ BACK TO TOP</a></footer>
+  <script src="economy.js"></script><script src="script.js"></script>
+</body>
+</html>
